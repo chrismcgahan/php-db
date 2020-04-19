@@ -51,6 +51,6 @@ $firstRow = $db->getRow('SELECT * FROM foo ORDER BY id ASC LIMIT 1');
 $allRows = $db->getAll('SELECT * FROM foo');
 
 
-// Trigger an exception because "everything" does not exist
+// Trigger an exception because "everything" is an unkown column
 $db->query('SELECT everything FROM foo');
 ```
