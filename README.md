@@ -35,7 +35,7 @@ $insertId = $db->insert('foo', ['data' => 'bar']);
 
 
 // Update one or more records and return the number of affected rows
-// $db->update($tableName, $updateArray, $whereArray)
+$db->update($tableName, $updateArray, $whereArray)
 $affectedRows = $db->update('foo', ['data' => 'foobar'], ['id' => 1]);
 
 
